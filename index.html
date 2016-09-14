@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <title>Suffolk Youth Offending Service</title>
 
-        <!-- Bootstrap core CSS -->
+        <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/custom.css" rel="stylesheet"> 
-        <link href="css/animate.css" rel="stylesheet"> 
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet" />
 
-        <!-- Custom styles for this template -->
-        <link href="css/justified-nav.css" rel="stylesheet">
-        <link href="css/social-buttons.css" rel="stylesheet">
+        <!-- Custom Styles -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|PT+Sans|Sarala|Work+Sans|Nunito|Questrial|Montserrat|Oswald" rel="stylesheet">
@@ -27,295 +20,153 @@
         <!-- Elegant Icon Font -->
         <link rel="stylesheet" href="css/line-icons.min.css">
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
     </head>
     <body>
-        <div class="col-md-12">
-            <div class="container stories-con">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
 
-                <!-- The justified navigation menu is meant for single line per list item.
-              Multiple lines will require custom code not provided by Bootstrap. -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-                <div class="container">
-
-                    <!-- Hamburger XS -->
-                    <nav class="navbar navbar-default hidden-lg hidden-md">
-                        <div class="container main-nav">
-                            <!-- Brand and toggle get grouped for better mobile display -->
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                        </div><!-- /.container -->
-                    </nav>
-
+                    <!-- Branding ->
                     <div class="row">
-                        <div class="masthead ">
+                        <div class="col-md-4">
+                            <img src="images/arms.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="col-md-8">
                             <div class="row">
-                                <div class="col-md-6 branding">
-                                    <div class="col-md-6 col-sm-6 col-xs-6" id="banner-logo">
-                                        <img src="images/children-orange.png" class="img-responsive" alt="">
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-6" id="banner-text">
-                                        <div class="row">
-                                            <h3 class="text-muted" id="title-line1">Suffolk Youth</h3>
-                                        </div>
-                                        <div class="row">
-                                            <h3 class="text-muted" id="title-line2">Offending Service</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <nav>
-                                            <div id="navbar" class="navbar-collapse collapse">
-                                                <ul class="nav navbar-nav navbar-right nav-pad portal-links">
-                                                    <li><a href="#" data-toggle="modal" data-target="#practitioner"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp; Practitioners Portal</a></li>
-                                                    <li><a href="#" data-toggle="modal" data-target="#volunteer"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp; Volunteers Portal</a></li>
-                                                </ul>
-                                            </div>
-                                        </nav>
-                                    </div>
-
-                                    <!-- Search Box -->
-                                    <div class="row">
-                                        <div class="col-lg-6 hidden-xs" id="search">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Search...">
-                                                <span class="input-group-btn">
-                                                    <button class="btn btn-default search" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                                </span>
-                                            </div><!-- /input-group -->
-                                        </div><!-- /.col-lg-6 -->
-                                    </div><!-- /.row -->
-
-                                </div>
+                                <h3 class="text-muted" id="title-line1">Suffolk Youth</h3>
+                            </div>
+                            <div class="row">
+                                <h3 class="text-muted" id="title-line2">Offending Service</h3>
                             </div>
                         </div>
                     </div>
+                    <!-- /Branding -->
+
                 </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#information">Information</a></li>
+                        <li><a href="#google_map">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
 
-                <nav class="navbar navbar-default hidden-xs">
-                    <div class="container main-nav">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
+        <!-- Section 1 (Home) -->
+        <div id="section1" class="home">
+            <div class="text-vcenter">
+                <h1>Suffolk Youth Offending Service</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Get started today</a></p>
+            </div>
+        </div>
+        <!-- /Section 1 -->
 
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <ul class="nav nav-justified">
-                                    <li class="active"><a href="#">Home</a></li>
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Downloads</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                        </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container -->
-                </nav>
+        <!-- Section 2 (About) -->
+        <div id="section2">
+            <div class="container pad-section">
 
-                <!-- Social Buttons -->
-                <div class="row hidden-md hidden-lg" id="nav-social">
-                    <a href="#" target="_blank"><img src="images/twitter.png"></a>
-                    <a href="#" target="_blank"><img src="images/facebook.png"></a>
-                    <a href="#" target="_blank"><img src="images/linkedin.png"></a>
-                    <a href="#" target="_blank"><img src="images/google-plus.png"></a>
-                </div>
-
-                <!-- Search Box (XS View) -->
                 <div class="row">
-                    <div class="col-lg-6 hidden-md hidden-lg" id="search">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default search" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                            </span>
-                        </div>
-                    </div>
+                    <h2 style="text-align: center; margin-botttom: 0px;">About Us</h2>
+                    <hr style="width: 35%"/>
                 </div>
 
-                <!-- Jumbotron -->
-                <div class="jumbotron img-overlay">
-                    <div class="cover-overlay">
-                        <h1><strong>Welcome</strong></h1>
-                        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-                        <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
-                    </div>
-                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <i class="icon icon-camera"></i>
+                        <h2>Lorum Ipsum</h2>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <i class="icon icon-quote"></i>
+                        <h2>Lorum Ipsum</h2>
+                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <i class="icon icon-video"></i>
+                        <h2>Lorum Ipsum</h2>
+                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div>
+        </div>
+        <!-- /Section 2 -->
 
-                <!-- Menu (Row 1) -->
-                <div class='container' id="stories">
-                    <div class="row">
-                        <div class="col-md-3 panel1-md">
-                            <div class="panel panel-default icon" id='panel1'>
-                                <div class="panel-body">
-                                    <div class="row text-left">
-                                        <h3>Menu Item</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                    </div>
-                                    <div class='row'>
-                                        <a href="#"> <i class="fa fa-arrow-circle-right fa-2x pull-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 panel2-md">
-                            <div class="panel panel-default icon" id='panel2'>
-                                <div class="panel-body">
-                                    <div class="row text-left">
-                                        <h3>Menu Item</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                    </div>
-                                    <div class='row'>
-                                        <a href="#"> <i class="fa fa-arrow-circle-right fa-2x pull-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 panel3-md">
-                            <div class="panel panel-default icon" id='panel3'>
-                                <div class="panel-body">
-                                    <div class="row text-left">
-                                        <h3>Menu Item</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                    </div>
-                                    <div class='row'>
-                                        <a href="#"> <i class="fa fa-arrow-circle-right fa-2x pull-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 panel4-md">
-                            <div class="panel panel-default icon" id='panel4'>
-                                <div class="panel-body">
-                                    <div class="row text-left">
-                                        <h3>Menu Item</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                                    </div>
-                                    <div class='row'>
-                                        <a href="#"> <i class="fa fa-arrow-circle-right fa-2x pull-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- Row End -->
-                    </div> <!-- Container End>
-    
-                    <!-- Menu (Row 2) -->                    
-                    <div class="row">
-                        <div class="col-md-3 panel5-md">
-                            <div class="panel panel-default icon" id='panel5'>
-                                <div class="panel-body">
-                                    <div class="row text-center" >
-                                        <div class="col-md-3" style="padding:0px;">
-                                            <i class="icon icon-briefcase"></i>
-                                        </div>
-                                        <div class="col-md-9 text-left" style="padding:0px 0px 0px 30px;">
-                                            <h3 style="margin:0px 0px 10px 0px;">Menu Item</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 panel6-md">
-                            <div class="panel panel-default icon" id='panel6'>
-                                <div class="panel-body">
-                                    <div class="row text-center">
-                                        <div class="col-md-3" style="padding:0px;">
-                                            <i class="icon icon-paperclip"></i>
-                                        </div>
-                                        <div class="col-md-9 text-left" style="padding:0px 0px 0px 20px;">
-                                            <h3 style="margin:0px 0px 10px 0px;">Menu Item</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 panel7-md">
-                            <div class="panel panel-default icon" id='panel7'>
-                                <div class="panel-body">
-                                    <div class="row text-center">
-                                        <div class="col-md-3" style="padding:0px;">
-                                            <i class="icon icon-hourglass"></i>
-                                        </div>
-                                        <div class="col-md-9 text-left" style="padding:0px 0px 0px 5px;">
-                                            <h3 style="margin:0px 0px 10px 0px;">Menu Item</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 panel8-md">
-                            <div class="panel panel-default icon" id='panel8'>
-                                <div class="panel-body">
-                                    <div class="row text-center" >
-                                        <div class="col-md-3" style="padding:0px;">
-                                            <i class="icon icon-envelope"></i>
-                                        </div>
-                                        <div class="col-md-9 text-left" style="padding:0px 0px 0px 30px;">
-                                            <h3 style="margin:0px 0px 10px 0px;">Menu Item</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- Row End -->
-                </div> <!-- Container End>
-    
-                <!-- Featurettes -->
-                <hr class="featurette-divider">
-
+        <!-- Section 3 (Services) -->
+        <div id="section3" class="pad-section">
+            <div class="container">
                 <div class="row featurette">
                     <div class="col-md-7">
-                        <h2 class="featurette-heading1">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+                        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                         <p><a class="btn btn-primary" href="#" role="button">Read More &raquo;</a></p>
                     </div>
                     <div class="col-md-5">
-                        <img class="featurette-image img-responsive center-block" src="images/bmx.jpg" alt="">
+                        <img class="featurette-image img-responsive center-block" src="images/forest.jpg" alt="">
                     </div>
                 </div>
-
                 <hr class="featurette-divider">
-
                 <div class="row featurette">
                     <div class="col-md-7 col-md-push-5">
-                        <h2 class="featurette-heading2">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+                        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                         <p><a class="btn btn-primary" href="#" role="button">Read More &raquo;</a></p>
                     </div>
                     <div class="col-md-5 col-md-pull-7">
-                        <img class="featurette-image img-responsive center-block" src="images/smoking.jpg" alt="" width="500px" height="500px">
+                        <img class="featurette-image img-responsive center-block" src="images/gazing.jpg" alt="">
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- /Section 3 -->
 
-                <hr class="featurette-divider">
+        <!-- Section 4 (Information) -->
+        <div id="section4">
+            <div class="container pad-section">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2>Safari bug warning!</h2>
+                        <p class="text-danger">As of v9.1.2, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2>Heading</h2>
+                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+                        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Section 4 -->
 
-                <!-- Sub-Footer -->
+        <!-- Section 5 (Contact) -->
+        <div id="section5">
+            <div class="container pad-section">
                 <div class="row" style="margin-top: 10px;">
                     <div class="col-md-4">
                         <h2>Useful Links</h2>
@@ -344,7 +195,7 @@
                     <div class="col-md-4">
                         <h2>Twitter</h2>
                         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                        <a class="twitter-timeline" href="https://twitter.com/suffolkcc" height="260" data-chrome="noheader nofooter transparent">Tweets by suffolkcc</a>
+                        <a class="twitter-timeline" href="https://twitter.com/suffolkcc" height="265" data-chrome="noheader nofooter">Tweets by suffolkcc</a>
                         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                         <p><a class="btn btn-primary" href="#" role="button">View Twitter &raquo;</a></p>
                     </div>
@@ -360,130 +211,22 @@
                         </form>
                     </div>
                 </div>
-
-                <!-- Footer -->
-                <footer class="footer">
-                    <p>&copy; 2016 Suffolk County Council</p>
-                </footer>
-
-            </div> <!-- /container -->
-
-            <!-- Login Modals -->
-            <div class="modal fade" id="practitioner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Practitioner's Portal</h4>
-                            <p>This page is secured. Enter your credentials below and we will send you right along.</p>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="row">
-                                <div class="col-md-4"><label class="checkbox-inline">
-                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> Remember me
-                                    </label></div>
-                                <div class="col-md-4"><u href='#'>I've lost my Password</u></div>
-                                <div class="col-md-4"><button type="button" class="btn btn-primary">Log-in</button></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="volunteer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Volunteer's Portal</h4>
-                            <p>This page is secured. Enter your credentials below and we will send you right along.</p>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="row">
-                                <div class="col-md-4"><label class="checkbox-inline">
-                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> Remember me
-                                    </label></div>
-                                <div class="col-md-4"><u href='#'>I've lost my Password</u></div>
-                                <div class="col-md-4"><button type="button" class="btn btn-primary">Log-in</button></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Volunteer's Portal</h4>
-                            <p>This page is secured. Enter your credentials below and we will send you right along.</p>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="row">
-                                <div class="col-md-4"><label class="checkbox-inline">
-                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> Remember me
-                                    </label></div>
-                                <div class="col-md-4"><u href='#'>I've lost my Password</u></div>
-                                <div class="col-md-4"><button type="button" class="btn btn-primary">Log-in</button></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- /Section 5 -->
 
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2016 Suffolk County Council</p>
+            </div>
+        </footer>
+        <!-- /Footer -->
 
-        <script>
-            if ($(window).width() < 480 || $(window).height() < 480) {
-                //small screen, load other JS files
-                $.getScript('/js/social-buttons.js', function () {
-                    //the script has been added to the DOM, you can now use it's code
-                });
-            }
-        </script>
-
+        <!-- Javascript -->
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.min.js"></script>
-        <!-- <script src="js/social-buttons.js"></script> -->
+        <script src="js/main.js"></script>
 
         <!-- Twitter Widget -->
         <script>window.twttr = (function (d, s, id) {
@@ -500,7 +243,7 @@
                     t._e.push(f);
                 };
                 return t;
-            }(document, "script", "twitter-wjs"));</script>
+            }(document, "script", "twitter-wjs"));</script>        
 
     </body>
 </html>
